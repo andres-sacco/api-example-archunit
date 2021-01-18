@@ -26,7 +26,7 @@ class LayeredArchitectureTest {
             .layer(SERVICE).definedBy(SERVICE_PACKAGE)
 
             .whereLayer(CONTROLLER).mayNotBeAccessedByAnyLayer()
-            .whereLayer(MODEL).mayOnlyBeAccessedByLayers( REPOSITORY)
+            .whereLayer(MODEL).mayOnlyBeAccessedByLayers(REPOSITORY, SERVICE)
             .whereLayer(REPOSITORY).mayOnlyBeAccessedByLayers(SERVICE)
             .whereLayer(SERVICE).mayOnlyBeAccessedByLayers(CONTROLLER, SERVICE);
 }
