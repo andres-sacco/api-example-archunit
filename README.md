@@ -8,5 +8,4 @@ The idea behind this API is to show some of all possibles rules that you can val
 Here are some of technologies that I used to developed this example:
 - Spring Boot - 2.4.1
 - Archunit - 0.15.0
-- Junit5 - 5.7.0
 
